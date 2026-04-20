@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
 import { Navigate } from 'react-router-dom';
 import { KeyRound, Mail } from 'lucide-react';
-import { Session, User } from '@supabase/supabase-js';
 
 export const Login: React.FC = () => {
   const { user, signIn } = useAuth();

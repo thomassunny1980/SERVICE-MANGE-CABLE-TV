@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
-import { Package, Wrench, CheckCircle, Clock } from 'lucide-react';
+import { useAuth } from '../contexts/AuthContext';
+import { Package, CheckCircle, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Dashboard: React.FC = () => {
